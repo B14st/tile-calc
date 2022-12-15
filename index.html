@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tile Calculator</title>
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <script src="app.js"></script>
+    <!--- styles --->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <header></header>
+  <body>
+    <h1 id="title">Tile Calculator</h1>
+    <form>
+      <h3 id="square">Area in square meters</h3>
+      <div>
+        <label for="lengthm2">Length</label>
+        <input type="text" placeholder="m" id="lengthm2" />
+        <label for="widthm2">Width</label>
+        <input type="text" placeholder="m" id="widthm2" />
+        <button
+          type="button"
+          id="calculate"
+          onclick="calculateArea()"
+          value="submit"
+        >
+          Calculate Area
+        </button>
+
+        <input type="text" id="result" placeholder="Total area" />
+      </div>
+    </form>
+
+    <h3 id="adhesive">How much tile adhesive do I need?</h3>
+    <label>Total wall area</label>
+    <input type="text" id="wallM2" placeholder="m2" />
+    <label>Total floor area</label>
+    <input type="text" id="floorM2" placeholder="m2" />
+    <label for="bit tiles" id="big.tiles"
+      >Big tiles (60x60 cm and larger)</label
+    >
+    <input type="checkbox" id="bigT" name="fav_language" class="checkbox" />
+    <button
+      type="button"
+      id="calcAd"
+      onclick="calculateAdhesive()"
+      value="submit"
+    >
+      Calculate
+    </button>
+    <input type="text" id="totalAd" placeholder="Amount in kg" />
+
+    <h3 id="grout">How much tile grout do i need?</h3>
+    <label for="tile size">Tile size</label>
+    <br />
+    <form>
+      <select name="tile size" id="tSize">
+        <option value="0">Choose your tile size</option>
+        <option value="0.8" id="mosaic">Mosaic</option>
+        <option value="0.6" id="10">10x10cm</option>
+        <option value="0.5" id="20">20x20cm</option>
+        <option value="0.4" id="30">30x30cm</option>
+        <option value="0.3" id="3x6">30x60cm</option>
+        <option value="0.2" id="6x6">60x60cm</option>
+        <option value="0.1" id="6x1">60x120cm</option>
+      </select>
+
+      <br />
+      <label for="grout thickness">Grout thickness</label>
+      <br />
+
+      <select name="grout thickness" id="groutT">
+        <option value="-0.1" id="2">2mm</option>
+        <option value="0" id="3">3mm (most common)</option>
+        <option value="0.2" id="4">4mm</option>
+        <option value="0.3" id="5">5mm</option>
+      </select>
+
+      <br />
+      <label>Total area:</label>
+      <input type="text" id="groutM2" placeholder="m2" />
+      <button
+        type="button"
+        value="submit"
+        id="calcButton"
+        onclick="calculateGrout()"
+      >
+        Calculate
+      </button>
+      <input type="number" id="totalG" placeholder="Amount in kg" />
+    </form>
+  </body>
+</html>
