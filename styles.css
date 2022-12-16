@@ -11,7 +11,7 @@ body {
 
 h1 {
   writing-mode: -lr;
-  color: #ffffff;
+  color: #76adb6;
   margin-bottom: 5rem;
   padding-top: 1.5rem;
 }
@@ -20,7 +20,7 @@ h3 {
   padding-top: 1rem;
   padding-bottom: 1rem;
   font-weight: bold;
-  color: #ffffff;
+  color: #76adb6;
 }
 
 #totalm2 {
@@ -32,8 +32,8 @@ h3 {
 button {
   display: block;
   margin: auto;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
   background-color: #76adb6;
   color: white;
   border: none;
@@ -42,12 +42,21 @@ button {
   cursor: pointer;
 }
 
+#calcAd {
+  margin-top: 0;
+}
+
+#disclaimer {
+  color: rgb(53, 168, 214);
+  margin-top: 3rem;
+}
+
 input {
   display: block;
   margin: auto;
   text-align: center;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
   border: 1px solid #ccc;
   padding: 0.5rem;
   border-radius: 3px;
@@ -65,7 +74,7 @@ div {
   translate: top;
 }
 
-#groutM2 {
+#groutM2 #lengthM2 #widthM2 {
   color: #f1f1f1;
   background-color: #424242;
 }
