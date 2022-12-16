@@ -9,7 +9,7 @@ function calculateArea() {
   const area = length * width;
 
   // Displays the result in the input element
-  document.getElementById("result").value = area + " m2";
+  document.getElementById("result").value = area.toFixed(1) + " m2";
 }
 
 // defines the function and adds a set value to the equation
