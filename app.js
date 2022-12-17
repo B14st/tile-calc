@@ -52,7 +52,7 @@ function calculateGrout() {
   // Convert the value of the total area element into a number
   const totalAreaGN = parseFloat(totalAreaG.value);
 
-  let totalGrout = totalAreaGN * selectedTileSize * selectedGroutThickness;
+  let totalGrout = totalAreaGN * selectedTileSize + selectedGroutThickness;
 
   document.getElementById("totalG").value = totalGrout.toFixed(1) + " kg";
   console.log(typeof "totalGrout");
