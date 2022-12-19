@@ -21,10 +21,11 @@
     <h1 id="title"><span>Tile Calculator</span></h1>
     <p>
       With this tool you can calculate what you need for your tiling project. It
-      can calculate square meters, amount of tile adhesive and amount of tile
-      grout. (Only works with metric units) <br />
+      can calculate area in square meters, amount of tile adhesive and amount of
+      tile grout. <br />
+      (Only works with metric units) <br />
       <br />
-      *All calculations are only estimates.
+      *All calculations are only estimates*
     </p>
 
     <form>
@@ -72,13 +73,14 @@
     <form>
       <select name="tile size" id="tSize">
         <option value="0">Choose your tile size</option>
-        <option value="0.8" id="mosaic">Mosaic</option>
-        <option value="0.6" id="10">10x10cm</option>
-        <option value="0.5" id="20">20x20cm</option>
-        <option value="0.4" id="30">30x30cm</option>
-        <option value="0.3" id="3x6">30x60cm</option>
+        <option value="2.6" id="mosaic 2.5x2.5">Mosaic (2.5x2.5cm)</option>
+        <option value="1.8" id="mosaic 5x5">Mosaic (5x5cm)</option>
+        <option value="0.86" id="10">10x10cm</option>
+        <option value="0.43" id="20">20x20cm</option>
+        <option value="0.3" id="30">30x30cm</option>
+        <option value="0.22" id="3x6">30x60cm</option>
         <option value="0.2" id="6x6">60x60cm</option>
-        <option value="0.1" id="6x1">60x120cm</option>
+        <option value="0.12" id="6x1">60x120cm</option>
       </select>
 
       <br />
@@ -86,10 +88,10 @@
       <br />
 
       <select name="grout thickness" id="groutT">
-        <option value="-0.1" id="2">2mm</option>
-        <option value="0" id="3">3mm (most common)</option>
-        <option value="0.2" id="4">4mm</option>
-        <option value="0.3" id="5">5mm</option>
+        <option value="0.65" id="2">2mm</option>
+        <option value="1" id="3">3mm (most common)</option>
+        <option value="1.32" id="4">4mm</option>
+        <option value="1.62" id="5">5mm</option>
       </select>
 
       <br />
@@ -108,10 +110,9 @@
   </body>
   <footer>
     <p id="disclaimer">
-      DISCLAIMER: Do keep in mind that all the results are only estimates and
-      won't be 100% correct considering various variables that might apply to
-      your specific project. I recommend consulting with a proffessional to
-      ensure a good result.
+      DISCLAIMER: Keep in mind that all the results are only estimates and won't
+      be 100% accurate considering various variables that might apply to your
+      specific project.
     </p>
   </footer>
 </html>

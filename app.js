@@ -30,7 +30,6 @@ function calculateAdhesive() {
   const totalM2 = wall + floor;
   // Displays the result in the input element
   document.getElementById("totalAd").value = totalM2.toFixed(1) + " kg";
-  console.log(typeof "wall");
 }
 // GROUT //
 
@@ -52,7 +51,14 @@ function calculateGrout() {
   // Convert the value of the total area element into a number
   const totalAreaGN = parseFloat(totalAreaG.value);
 
-  let totalGrout = totalAreaGN * selectedTileSize + selectedGroutThickness;
+  let totalGrout = totalAreaGN * selectedTileSize;
+
+  if ((selectedGroutThickness.value = "4")) {
+    totalGrout = totalAreaGN * selectedTileSize * selectedGroutThickness;
+  }
+  if ((selectedGroutThickness.value = "5")) {
+    totalGrout = totalAreaGN * selectedTileSize * selectedGroutThickness;
+  } else totalGrout = totalAreaGN * selectedTileSize - selectedGroutThickness;
 
   document.getElementById("totalG").value = totalGrout.toFixed(1) + " kg";
   console.log(typeof "totalGrout");
