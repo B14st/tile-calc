@@ -18,6 +18,12 @@
   </head>
   <header></header>
   <body>
+    <div id="navbar">
+      <a href="#square">Area Calculator</a>
+      <a href="#adhesive">Tile adhesive</a>
+      <a href="#grout">Tile grout</a>
+      <a href="#about">About</a>
+    </div>
     <h1 id="title"><span>Tile Calculator</span></h1>
     <p>
       With this tool you can calculate what you need for your tiling project. It
@@ -48,13 +54,13 @@
       </div>
     </form>
 
-    <h3 id="adhesive">How much tile adhesive do I need?</h3>
+    <h3 id="adhesive">Calculate amount of tile adhesive</h3>
     <label>Total wall area</label>
     <input type="text" id="wallM2" placeholder="m2" />
     <label>Total floor area</label>
     <input type="text" id="floorM2" placeholder="m2" />
     <label for="bit tiles" id="big.Tiles"
-      >Big tiles (60x60 cm and larger)</label
+      >Large format tiles (60x60 cm and larger)</label
     >
     <input type="checkbox" id="bigT" name="fav_language" class="checkbox" />
     <button
@@ -67,7 +73,7 @@
     </button>
     <input type="text" id="totalAd" placeholder="Amount in kg" />
 
-    <h3 id="grout">How much tile grout do i need?</h3>
+    <h3 id="grout">Calculate amount of tile grout</h3>
     <label for="tile size">Tile size</label>
     <br />
     <form>
@@ -89,7 +95,7 @@
 
       <select name="grout thickness" id="groutT">
         <option value="0.65" id="2">2mm</option>
-        <option value="1" id="3">3mm (most common)</option>
+        <option value="1" id="3" selected>3mm (most common)</option>
         <option value="1.32" id="4">4mm</option>
         <option value="1.62" id="5">5mm</option>
       </select>
@@ -107,12 +113,18 @@
       </button>
       <input type="text" id="totalG" placeholder="Amount in kg" />
     </form>
-  </body>
-  <footer>
     <p id="disclaimer">
       DISCLAIMER: Keep in mind that all the results are only estimates and won't
       be 100% accurate considering various variables that might apply to your
       specific project.
     </p>
+  </body>
+  <footer id="about">
+    <p>
+      Made by Steffen Hansen <br />
+      <br />
+      Contact: steffenhansen.webdev@gmail.com
+    </p>
+    <a href="https://github.com/B14st" id="git">My github page </a>
   </footer>
 </html>

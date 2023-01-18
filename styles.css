@@ -1,12 +1,50 @@
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css);
 
-/* Dark color scheme */
+p {
+  max-width: 70%;
+  text-align: center;
+  margin-left: 15%;
+}
+
+#navbar {
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: block;
+  transition: top 0.3s;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 15px 7px;
+  text-decoration: none;
+  font-size: 17px;
+}
+#navbar a:hover {
+  color: #76adb6;
+}
+
 body {
   background-color: #414450;
   color: #f1f1f1;
   font-family: sans-serif;
   text-align: center;
-  padding-bottom: 1.5rem;
+  padding-top: 2rem;
+  padding-left: 0;
+  margin: 0;
+}
+
+#git {
+  color: #76adb6;
+  text-decoration: none;
+}
+
+#home {
+  margin-right: 20px;
 }
 
 h1 {
@@ -47,8 +85,9 @@ button {
 }
 
 #disclaimer {
-  color: rgb(53, 168, 214);
-  margin-top: 3rem;
+  color: #76adb6;
+  margin-top: 4rem;
+  margin-bottom: 5rem;
 }
 
 input {
@@ -72,6 +111,7 @@ div {
   display: inline;
   margin-top: 0rem;
   translate: top;
+  border-radius: 5px;
 }
 
 #groutM2 #lengthM2 #widthM2 {
@@ -86,4 +126,10 @@ div {
   margin-bottom: 1rem;
   color: #f1f1f1;
   background-color: #424242;
+}
+
+footer {
+  background-color: #424242;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
 }

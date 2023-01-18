@@ -1,3 +1,15 @@
+// Function for navbar scroll //
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function () {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-50px";
+  }
+  prevScrollpos = currentScrollPos;
+};
+
 // SQUAREMETERS //
 // Define a function to calculate the area
 function calculateArea() {
@@ -11,7 +23,7 @@ function calculateArea() {
   // Displays the result in the input element
   document.getElementById("result").value = area.toFixed(1) + " m2";
 }
-
+// TILE ADHESIVE //
 // defines the function and adds a set value to the equation
 function calculateAdhesive() {
   let wall = document.getElementById("wallM2").value * 2.5;
@@ -50,14 +62,15 @@ function calculateGrout() {
 
   // Convert the value of the total area element into a number
   const totalAreaGN = parseFloat(totalAreaG.value);
-
+  // Defines the calculation for grout thickness (3mm default calculation)
   let totalGrout = totalAreaGN * selectedTileSize;
-
+  // "if" function that decides the equation for selected grout thickness
   if ((selectedGroutThickness.value = "4")) {
     totalGrout = totalAreaGN * selectedTileSize * selectedGroutThickness;
   }
   if ((selectedGroutThickness.value = "5")) {
     totalGrout = totalAreaGN * selectedTileSize * selectedGroutThickness;
+    // Else is for 2mm grout thickness
   } else totalGrout = totalAreaGN * selectedTileSize - selectedGroutThickness;
 
   document.getElementById("totalG").value = totalGrout.toFixed(1) + " kg";
