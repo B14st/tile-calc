@@ -18,7 +18,7 @@ p {
 #navbar a {
   float: left;
   display: block;
-  color: #f2f2f2;
+  color: rgb(172, 172, 172);
   text-align: center;
   padding: 15px 7px;
   text-decoration: none;
@@ -129,7 +129,7 @@ div {
 }
 
 footer {
-  background-color: #424242;
+  background-color: rgb(59, 59, 59);
   padding-top: 1rem;
   padding-bottom: 2rem;
 }

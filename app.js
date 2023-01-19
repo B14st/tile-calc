@@ -2,7 +2,7 @@
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function () {
   var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
+  if (prevScrollpos > currentScrollPos || window.pageYOffset < 50) {
     document.getElementById("navbar").style.top = "0";
   } else {
     document.getElementById("navbar").style.top = "-50px";
@@ -44,7 +44,6 @@ function calculateAdhesive() {
   document.getElementById("totalAd").value = totalM2.toFixed(1) + " kg";
 }
 // GROUT //
-
 // Defines a function to calculate grout
 function calculateGrout() {
   // Get the selected tile size element
